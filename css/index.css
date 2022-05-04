@@ -1,0 +1,405 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+main {
+    width: 375px;
+    height: 812px;
+    background-color: rgb(236, 227, 214);
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.noach-line {
+    width: 375px;
+    height: 44px;
+    margin-bottom: 12px;
+}
+
+header {
+    width: 327px;
+    height: 43px;
+    margin-bottom: 33px;
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userimg {
+    width: 43px;
+    height: 43px;
+}
+
+.icon {
+    display: flex;
+}
+
+.qr-icon {
+    background-image: url(/img/qrIcon.png);
+    width: 24px;
+    height: 21px;
+}
+
+.search-icon {
+    background-image: url(/img/searchIcon.png);
+    width: 24px;
+    height: 24px;
+    margin-left: 21px;
+}
+
+.account-status {
+    width: 375px;
+    height: 206px;
+    /* background-color: red; */
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-info {
+    width: 279px;
+    height: 155px;
+    background: #ffffff;
+    box-shadow: 0px 0px 16px rgba(226, 191, 66, 0.19);
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.account-info > .account {
+    border-radius: 12px 12px 0 0;
+    height: 51px;
+    width: 279px;
+    /* width: 100%; */
+    /* background-color: bisque;s */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-info > .account > p {
+    /* background-color: red; */
+    text-align: center;
+    margin-left: 65px;
+    font-size: 13px;
+    color: #5f5f5f;
+}
+
+.account-info > .account > a {
+    display: block;
+    font-size: 14px;
+    margin-left: 40.9px;
+}
+
+.account-info > .balance {
+    height: 36px;
+    width: 279px;
+    /* background-color: rgb(109, 90, 68); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Noto Sans CJK KRs";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.account-info > .balance > span {
+    font-size: 14px;
+}
+
+.account-info > .volume {
+    height: 35px;
+    width: 279px;
+    /* background-color: rgb(92, 66, 38); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-info > .volume > .volume-1 {
+    margin-top: 5px;
+    width: 202px;
+    height: 17px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.account-info > .volume > .chart-btn {
+    width: 24px;
+    height: 24px;
+}
+
+.account-info > .d-day {
+    border-radius: 0 0 12px 12px;
+    height: 33px;
+    width: 279px;
+    /* background-color: rgb(172, 115, 55); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #858585;
+}
+
+.ad {
+    height: 25px;
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.ad > a {
+    font-size: 14px;
+    text-decoration-line: none;
+    color: black;
+}
+
+.ad > a > span {
+    text-decoration-line: underline;
+}
+
+.account-history {
+    width: 375px;
+    height: 395px;
+    background-color: rgb(248, 248, 248);
+    background: #f5f5f5;
+    /* 사용내역 그림자 */
+
+    box-shadow: 0px -5px 14px rgba(189, 144, 28, 0.08);
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-history > .save-list {
+    width: 308px;
+    height: 49px;
+    margin: auto;
+    /* background-color: red; */
+    margin-top: 23px;
+    overflow-x: scroll;
+    display: flex;
+    margin-bottom: 17px;
+}
+
+.account-history > .save-list > img {
+    margin-right: 10px;
+}
+
+.expenses-list {
+    display: flex;
+    flex-direction: column;
+    width: 302px;
+    height: 322px;
+    /* background-color: red; */
+    margin: auto;
+    overflow-x: scroll;
+}
+
+.expenses-list > .expenses {
+    width: 302px;
+    height: 231px;
+    margin-bottom: 38px;
+    /* background-color: blue; */
+}
+
+.expenses-list > .expenses > .date {
+    display: flex;
+    height: 21px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    /* background-color: #5f5f5f; */
+}
+
+.detail-expenses > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+    padding-bottom: 9px;
+    border-bottom: 0.1px solid gray;
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444444;
+}
+
+nav {
+    background-color: blue;
+    width: 375px;
+    height: 78px;
+    border-radius: 0 0 12px 12px;
+    background: linear-gradient(163.63deg, #00bdb2 11.35%, #c4e7b8 139.96%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav > .home {
+    background-image: url(/img/mdi_home.png);
+    width: 28px;
+    height: 28px;
+}
+nav > .send {
+    background-image: url(/img/Group\ 28.png);
+    width: 28px;
+    height: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+nav > .msg {
+    background-image: url(/img/Vector.png);
+    width: 28px;
+    height: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+nav > .etc {
+    background-image: url(/img/etc.png);
+    width: 28px;
+    height: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
