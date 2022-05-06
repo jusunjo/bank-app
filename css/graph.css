@@ -1,0 +1,329 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+main {
+    width: 375px;
+    height: 812px;
+    background-color: rgb(250, 250, 250);
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.noach-line {
+    width: 375px;
+    height: 44px;
+}
+
+.close {
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: -0.24px;
+    text-align: end;
+    margin-right: 13px;
+}
+
+h1 {
+    /* background-color: red; */
+    width: 375px;
+    height: 36px;
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 65px;
+    /* identical to box height */
+    margin-left: 31px;
+    letter-spacing: -0.24px;
+    margin-bottom: 40px;
+}
+
+/* .fixed {
+    position: fixed;
+} */
+
+.account-graph {
+    width: 375px;
+    height: 612px;
+    /* background-color: red; */
+    margin-top: 29px;
+    margin-left: 29px;
+    overflow-y: scroll;
+}
+
+.account-graph > .base-amount {
+    width: 308px;
+    height: 36px;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-graph > .base-amount > .setting-amount-name {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 158px;
+    height: 69px;
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    /* identical to box height */
+
+    letter-spacing: -0.24px;
+}
+
+.account-graph > .base-amount > .setting-amount {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 217px;
+    height: 69px;
+
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    letter-spacing: -0.24px;
+
+    color: #ff5f00;
+}
+
+.volume {
+    margin-top: 15px;
+    margin-bottom: 59px;
+    width: 308px;
+    height: 28px;
+    /* background-color: blue; */
+}
+
+.report {
+    width: 375px;
+    height: 242px;
+    margin-bottom: 46px;
+}
+
+.report > .report-name {
+    /* background-color: blue; */
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: -0.24px;
+
+    color: #444444;
+    margin-bottom: 17px;
+}
+
+.expend-pattern > .monthly-pattern {
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: -0.24px;
+
+    color: #444444;
+    margin-bottom: 18px;
+}
+
+.expend-pattern > .patterns-graph {
+    margin-bottom: 5px;
+}
+
+.topfive-expend {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 308px;
+    height: 237px;
+    /* justify-content: center; */
+}
+
+.top-expend {
+    width: 303px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    /* background-color: red; */
+}
+
+.top-expend .expend-name {
+    margin-left: 21px;
+}
+
+.top-expend .expend-price {
+    text-align: end;
+}
+
+nav {
+    background-color: blue;
+    width: 375px;
+    height: 78px;
+    border-radius: 0 0 12px 12px;
+    background: linear-gradient(163.63deg, #00bdb2 11.35%, #c4e7b8 139.96%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav > .home {
+    background-image: url(/img/mdi_home.png);
+    width: 28px;
+    height: 28px;
+}
+nav > .send {
+    background-image: url(/img/Group\ 28.png);
+    width: 28px;
+    height: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+nav > .msg {
+    background-image: url(/img/Vector.png);
+    width: 28px;
+    height: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+nav > .etc {
+    background-image: url(/img/etc.png);
+    width: 28px;
+    height: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

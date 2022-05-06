@@ -403,3 +403,8 @@ nav > .etc {
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+.swiper {
+    width: 375px;
+    height: 812px;
+}
