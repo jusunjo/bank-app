@@ -328,10 +328,10 @@ header {
     height: 322px;
     /* background-color: red; */
     margin: auto;
-    overflow-x: scroll;
+    overflow: scroll;
 }
 
-.expenses-list > .expenses {
+.expenses-list > li .expenses-list > .expenses {
     width: 302px;
     height: 231px;
     margin-bottom: 38px;
@@ -351,11 +351,38 @@ header {
     /* background-color: #5f5f5f; */
 }
 
-.detail-expenses > li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.expenses-list > .expenses > .date > .date-left {
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
 
+    color: #000000;
+}
+
+.expenses-list > .expenses > .date > .date-right {
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #b4b4b4;
+}
+.detail-expenses {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-expenses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 15px;
     padding-bottom: 9px;
     border-bottom: 0.1px solid gray;
@@ -364,6 +391,11 @@ header {
     font-weight: 400;
     font-size: 18px;
     color: #444444;
+}
+
+.detail-expense {
+    display: flex;
+    justify-content: space-between;
 }
 
 nav {

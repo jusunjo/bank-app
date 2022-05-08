@@ -1,0 +1,171 @@
+[
+    [
+        {
+            "date": "2022-05-01",
+            "income": "in",
+            "classify": "",
+            "history": "용돈",
+            "price": 20000
+        },
+        {
+            "date": "2022-05-01",
+            "income": "out",
+            "classify": "health",
+            "history": "샐러드",
+            "price": 10000
+        },
+        {
+            "date": "2022-05-01",
+            "income": "out",
+            "classify": "eatout",
+            "history": "맛있어돈까스",
+            "price": 8000
+        },
+        {
+            "date": "2022-05-01",
+            "income": "out",
+            "classify": "mart",
+            "history": "이마트",
+            "price": 36000
+        },
+        {
+            "date": "2022-05-01",
+            "income": "out",
+            "classify": "eatout",
+            "history": "냉면",
+            "price": 8000
+        }
+    ],
+    [
+        {
+            "date": "2022-05-02",
+            "income": "in",
+            "classify": "",
+            "history": "월급",
+            "price": 4000000
+        },
+        {
+            "date": "2022-05-02",
+            "income": "out",
+            "classify": "mart",
+            "history": "홈플러스",
+            "price": 35000
+        },
+        {
+            "date": "2022-05-02",
+            "income": "out",
+            "classify": "mart",
+            "history": "롯데마트",
+            "price": 15900
+        },
+        {
+            "date": "2022-05-02",
+            "income": "out",
+            "classify": "eatout",
+            "history": "우리할매떡볶이",
+            "price": 10500
+        }
+    ],
+    [
+        {
+            "date": "2022-05-03",
+            "income": "out",
+            "classify": "eatout",
+            "history": "뼈해장국",
+            "price": 6500
+        },
+        {
+            "date": "2022-05-03",
+            "income": "out",
+            "classify": "mart",
+            "history": "코스트코",
+            "price": 130000
+        },
+        {
+            "date": "2022-05-03",
+            "income": "out",
+            "classify": "shopping",
+            "history": "잔스포츠",
+            "price": 55000
+        },
+        {
+            "date": "2022-05-03",
+            "income": "out",
+            "classify": "shopping",
+            "history": "올리브영",
+            "price": 10000
+        },
+        {
+            "date": "2022-05-03",
+            "income": "in",
+            "classify": "",
+            "history": "용돈",
+            "price": 30000
+        },
+        {
+            "date": "2022-05-04",
+            "income": "out",
+            "classify": "shopping",
+            "history": "책",
+            "price": 23000
+        },
+        {
+            "date": "2022-05-04",
+            "income": "out",
+            "classify": "mart",
+            "history": "롯데마트",
+            "price": 36500
+        },
+        {
+            "date": "2022-05-04",
+            "income": "out",
+            "classify": "shopping",
+            "history": "CGV",
+            "price": 16000
+        },
+        {
+            "date": "2022-05-04",
+            "income": "out",
+            "classify": "mart",
+            "history": "code책",
+            "price": 22500
+        },
+        {
+            "date": "2022-05-04",
+            "income": "out",
+            "classify": "mart",
+            "history": "홈플러스창동점",
+            "price": 13500
+        }
+    ],
+    [
+        {
+            "date": "2022-05-05",
+            "income": "in",
+            "classify": "health",
+            "history": "광역알뜰 마일리지",
+            "price": 6500
+        },
+        {
+            "date": "2022-05-05",
+            "income": "out",
+            "classify": "mart",
+            "history": "고등어",
+            "price": 10000
+        },
+        {
+            "date": "2022-05-05",
+            "income": "out",
+            "classify": "mart",
+            "history": "yes24",
+            "price": 30000
+        },
+        {
+            "date": "2022-05-05",
+            "income": "out",
+            "classify": "health",
+            "history": "마카다미아 견과류",
+            "price": 17000
+        }
+    ]
+]

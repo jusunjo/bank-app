@@ -31,7 +31,9 @@
                                     <a>이체</a>
                                 </div>
                                 <div class="balance">1,200,000<span>원</span></div>
-                                <div class="volume"><img class="volume-1" src="./img/volume.png" /><img class="chart-btn" src="./img/chartBtn.png" /></div>
+                                <div class="volume">
+                                    <img class="volume-1" src="./img/volume.png" /><a href="/graph.html"><img class="chart-btn" src="./img/chartBtn.png" /></a>
+                                </div>
                                 <div class="d-day">5일 동안 210,000원 남음</div>
                             </div>
                             <div class="ad">
@@ -39,7 +41,46 @@
                             </div>
                         </section>
                         <section class="account-history">
-                            <div class="save-list"><img src="./img/Component 3.png" /><img src="./img/Component 3.png" /><img src="./img/Component 4.png" /></div>
+                            <div class="save-list">
+                                <img src="./img/Component 3.png" /><img src="./img/addYellow.png" /><img class="'add" src="./img/add.png" /><img class="add-pigbank" src="./img/addPigBank.png" />
+                            </div>
+                            <div class="expenses-list"></div>
+                        </section>
+                        <nav>
+                            <div class="home"></div>
+                            <div class="send"></div>
+                            <div class="msg"></div>
+                            <div class="etc"></div>
+                        </nav>
+                    </main>
+                </div>
+                <div class="swiper-slide slide_2">
+                    <main>
+                        <img class="noach-line" src="./img/NoachLine.png" />
+                        <header>
+                            <img class="userimg" src="./img/baby.png" />
+                            <h3>의민이 용돈</h3>
+                            <div class="icon">
+                                <div class="qr-icon"></div>
+                                <div class="search-icon"></div>
+                            </div>
+                        </header>
+                        <section class="account-status">
+                            <div class="account-info">
+                                <div class="account">
+                                    <p>3333-11-1215736</p>
+                                    <a>이체</a>
+                                </div>
+                                <div class="balance">440,000<span>원</span></div>
+                                <div class="volume"><img class="volume-1" src="./img/babyVolume.png" /><img class="chart-btn" src="./img/chartBtn.png" /></div>
+                                <div class="d-day">5일 동안 210,000원 남음</div>
+                            </div>
+                            <div class="ad">
+                                <a href="https://www.naver.com">지금 낮은 이자로 생활대출을 신청하세요! <span>Go</span></a>
+                            </div>
+                        </section>
+                        <section class="account-history">
+                            <div class="save-list"><img src="./img/game.png" /><img src="./img/game.png" /><img src="./img/game.png" /></div>
                             <div class="expenses-list">
                                 <div class="expenses">
                                     <div class="date">
@@ -123,12 +164,12 @@
                         </nav>
                     </main>
                 </div>
-                <div class="swiper-slide slide_2">
+                <div class="swiper-slide slide_3">
                     <main>
                         <img class="noach-line" src="./img/NoachLine.png" />
                         <header>
-                            <img class="userimg" src="./img/baby.png" />
-                            <h3>의민이 용돈</h3>
+                            <img class="userimg" src="./img/grandma.png" />
+                            <h3>할머니 용돈</h3>
                             <div class="icon">
                                 <div class="qr-icon"></div>
                                 <div class="search-icon"></div>
@@ -137,11 +178,11 @@
                         <section class="account-status">
                             <div class="account-info">
                                 <div class="account">
-                                    <p>945-80200-196529</p>
+                                    <p>3333-11-1215736</p>
                                     <a>이체</a>
                                 </div>
-                                <div class="balance">1,200,000<span>원</span></div>
-                                <div class="volume"><img class="volume-1" src="./img/volume.png" /><img class="chart-btn" src="./img/chartBtn.png" /></div>
+                                <div class="balance">440,000<span>원</span></div>
+                                <div class="volume"><img class="volume-1" src="./img/grandmavolume.png" /><img class="chart-btn" src="./img/chartBtn.png" /></div>
                                 <div class="d-day">5일 동안 210,000원 남음</div>
                             </div>
                             <div class="ad">
@@ -149,7 +190,7 @@
                             </div>
                         </section>
                         <section class="account-history">
-                            <div class="save-list"><img src="./img/Component 3.png" /><img src="./img/Component 3.png" /><img src="./img/Component 4.png" /></div>
+                            <div class="save-list"><img src="./img/game.png" /><img src="./img/game.png" /><img src="./img/game.png" /></div>
                             <div class="expenses-list">
                                 <div class="expenses">
                                     <div class="date">
@@ -235,7 +276,7 @@
                 </div>
             </div>
         </div>
-
+        <div class="button"></div>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper(".swiper", {
@@ -260,5 +301,8 @@
                 },
             });
         </script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     </body>
 </html>
