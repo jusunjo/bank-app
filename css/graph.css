@@ -136,6 +136,10 @@ main {
     height: 44px;
 }
 
+.fixed > a {
+    text-decoration: none;
+}
+
 .close {
     font-family: "Noto Sans CJK KR";
     font-style: normal;
@@ -144,6 +148,7 @@ main {
     letter-spacing: -0.24px;
     text-align: end;
     margin-right: 13px;
+    color: black;
 }
 
 h1 {
@@ -166,7 +171,7 @@ h1 {
 } */
 
 .account-graph {
-    width: 375px;
+    width: 345px;
     height: 612px;
     /* background-color: red; */
     margin-top: 29px;
@@ -264,8 +269,8 @@ h1 {
     margin-bottom: 5px;
 }
 
-.topfive-expend {
-    margin-top: 5px;
+.topfive-expends {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     width: 308px;
@@ -273,21 +278,52 @@ h1 {
     /* justify-content: center; */
 }
 
-.top-expend {
-    width: 303px;
-    height: 36px;
+.topfive-expend {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.expend-name {
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    letter-spacing: -0.24px;
+}
+
+.topfive-expend > .expend-price {
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    text-align: right;
+    letter-spacing: -0.24px;
+
+    color: #858585;
+    width: 88px;
+}
+
+.topfive-img {
+    width: 28px;
+    height: 28px;
+    /* margin-bottom: 10px; */
+    margin-right: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expend-name {
+    margin-right: 90px;
+    width: 100px;
     /* background-color: red; */
-}
-
-.top-expend .expend-name {
-    margin-left: 21px;
-}
-
-.top-expend .expend-price {
-    text-align: end;
+    display: flex;
 }
 
 nav {
@@ -326,4 +362,38 @@ nav > .etc {
     height: 28px;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+.bar-line-chart {
+    width: 350px;
+    height: 200px;
+
+    overflow-x: scroll;
+}
+
+.bar-line {
+    width: 400px;
+    height: 200px;
+}
+#myChart {
+    /* overflow-x: scroll; */
+    width: 500px;
+    height: 300px;
+    position: relative;
+
+    /* background-color: red; */
+}
+/* 
+canvas {
+    display: block;
+} */
+
+.rel {
+    position: relative;
+}
+
+.totalValue {
+    position: absolute;
+    bottom: 118px;
+    left: 115px;
 }

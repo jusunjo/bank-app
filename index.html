@@ -4,11 +4,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./css/index.css" />
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
-        </style>
+
+        <script type="text/javascript" src="index.js"></script>
     </head>
     <body>
         <div class="swiper mySwiper">
@@ -41,8 +44,9 @@
                             </div>
                         </section>
                         <section class="account-history">
+                            <img class="upDown" src="./img/upAndDown.png" />
                             <div class="save-list">
-                                <img src="./img/Component 3.png" /><img src="./img/addYellow.png" /><img class="'add" src="./img/add.png" /><img class="add-pigbank" src="./img/addPigBank.png" />
+                                <img src="./img/Component 3.png" /><img src="./img/addYellow.png" /><img class="add" src="./img/add.png" /><img class="add-pigbank" src="./img/addPigBank.png" />
                             </div>
                             <div class="expenses-list"></div>
                         </section>
@@ -276,7 +280,7 @@
                 </div>
             </div>
         </div>
-        <div class="button"></div>
+
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper(".swiper", {
@@ -302,7 +306,6 @@
             });
         </script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script type="text/javascript" src="index.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     </body>
 </html>
