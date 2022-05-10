@@ -1,0 +1,233 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+main {
+    width: 375px;
+    height: 812px;
+    background-color: rgb(240, 240, 240);
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.noach-line {
+    width: 375px;
+    height: 44px;
+    margin-bottom: 12px;
+}
+.fixed {
+    height: 90px;
+}
+.fixed > a {
+    text-decoration: none;
+}
+
+.close {
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: -0.24px;
+    text-align: end;
+    margin-right: 13px;
+    color: black;
+}
+
+h1 {
+    /* background-color: red; */
+    width: 375px;
+    height: 36px;
+    font-family: "Noto Sans CJK KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 65px;
+    /* identical to box height */
+    margin-left: 31px;
+    letter-spacing: -0.24px;
+    margin-bottom: 40px;
+}
+
+.typing {
+    border: 0.5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 50px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.transfer-list {
+    /* background-color: red; */
+    width: 330px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 72px;
+}
+
+.transfer-list > img {
+    width: 317px;
+    height: 54px;
+    margin-bottom: 15px;
+}
+
+nav {
+    background-color: blue;
+    width: 375px;
+    height: 78px;
+    border-radius: 0 0 12px 12px;
+    background: linear-gradient(163.63deg, #00bdb2 11.35%, #c4e7b8 139.96%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav > .home {
+    background-image: url(/img/mdi_home.png);
+    width: 28px;
+    height: 28px;
+}
+nav > .send {
+    background-image: url(/img/Group\ 28.png);
+    width: 28px;
+    height: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+nav > .msg {
+    background-image: url(/img/Vector.png);
+    width: 28px;
+    height: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+nav > .etc {
+    background-image: url(/img/etc.png);
+    width: 28px;
+    height: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

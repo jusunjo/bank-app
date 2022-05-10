@@ -141,7 +141,7 @@ main {
 }
 
 .close {
-    font-family: "Noto Sans CJK KR";
+    font-family: "Noto Sans KR", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -155,7 +155,7 @@ h1 {
     /* background-color: red; */
     width: 375px;
     height: 36px;
-    font-family: "Noto Sans CJK KR";
+    font-family: "Noto Sans KR", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -194,7 +194,7 @@ h1 {
     justify-content: left;
     width: 158px;
     height: 69px;
-    font-family: "Noto Sans CJK KR";
+    font-family: "Noto Sans KR", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -211,7 +211,7 @@ h1 {
     width: 217px;
     height: 69px;
 
-    font-family: "Noto Sans CJK KR";
+    font-family: "Noto Sans KR", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -230,6 +230,20 @@ h1 {
     /* background-color: blue; */
 }
 
+.volume > input {
+    width: 320px;
+}
+
+input,
+progress {
+    accent-color: rgb(218, 75, 70);
+    outline: none;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
 .report {
     width: 375px;
     height: 242px;
@@ -238,7 +252,7 @@ h1 {
 
 .report > .report-name {
     /* background-color: blue; */
-    font-family: "Noto Sans CJK KR";
+    font-family: "Noto Sans KR", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -246,13 +260,13 @@ h1 {
     /* identical to box height */
 
     letter-spacing: -0.24px;
-
+    margin-top: 30px;
     color: #444444;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
 }
 
 .expend-pattern > .monthly-pattern {
-    font-family: "Noto Sans CJK KR";
+    font-family: "Noto Sans KR", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -286,7 +300,7 @@ h1 {
 }
 
 .expend-name {
-    font-family: "Noto Sans CJK KR";
+    font-family: "Noto Sans KR", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -296,10 +310,10 @@ h1 {
 }
 
 .topfive-expend > .expend-price {
-    font-family: "Noto Sans CJK KR";
+    font-family: "Noto Sans KR", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 27px;
 
     text-align: right;
@@ -387,6 +401,10 @@ nav > .etc {
 canvas {
     display: block;
 } */
+
+::-webkit-scrollbar {
+    display: none;
+}
 
 .rel {
     position: relative;

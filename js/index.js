@@ -1,27 +1,27 @@
 const $ = (selector) => document.querySelector(selector);
+
 let todayNow = new Date();
 let year = todayNow.getFullYear();
 let month = ("0" + (todayNow.getMonth() + 1)).slice(-2);
 let day = ("0" + todayNow.getDate()).slice(-2);
 let dateString = year + "-" + month + "-" + day;
-
 let today = new Date(dateString);
 
 async function App() {
+    //데이터 가공 ------------------------------------------------
     const getData = await axios.get("https://raw.githubusercontent.com/jusunjo/bank-json/main/bank.json");
-    const priceValues = getData.data.reduce((acc, current) => {
+    const newData = getData.data.reduce((acc, current) => {
         acc[current.date] = acc[current.date] || [];
         acc[current.date].push(current);
         return acc;
     }, {});
-    const dateData = Object.keys(priceValues).map((key) => {
+    const dateData = Object.keys(newData).map((key) => {
         return {
             date: key,
-            data: priceValues[key],
+            data: newData[key],
         };
     });
     // console.log(dateData);
-
     //---------------------------------------------------------
 
     //입출금내역 렌더링
@@ -31,15 +31,23 @@ async function App() {
                 if (view.income === "in") {
                     return `
                     <div class='detail-expense'>
-                    <span>${view.history}</span>
-                    <span class='styledText'>+ ${view.price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}</span>
+                        <span>
+                            ${view.history}
+                        </span>
+                        <span class='styledText'>
+                            + ${view.price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}
+                        </span>
                     </div>
                     `;
                 } else {
                     return `
                     <div class='detail-expense'>
-                    <span>${view.history}</span>
-                    <span>${view.price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}</span>
+                        <span>
+                            ${view.history}
+                        </span>
+                        <span>
+                            ${view.price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}
+                        </span>
                     </div>
                     `;
                 }
@@ -79,23 +87,30 @@ async function App() {
             .map((obj) => {
                 if (obj.date <= dateString) {
                     return `
-                    <div class="expenses">
-                    <div class="date">
-                    <p class="date-left">${dayCalcul(obj)}</p>
-                    <p class="date-right">${sum(obj.data)
-                        .toString()
-                        .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}</p>
-                    </div>
-                    <div class="detail-expenses"> 
-                    ${dwHistory(obj.data)}
-                    </div>
-                    </div>`;
+                        <div class="expenses">
+                            <div class="date">
+                                <p class="date-left">
+                                    ${dayCalcul(obj)}
+                                </p>
+                                <p class="date-right">
+                                    ${sum(obj.data)
+                                        .toString()
+                                        .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}
+                                </p>
+                            </div>
+                            <div class="detail-expenses"> 
+                                ${dwHistory(obj.data)}
+                            </div>
+                        </div>`;
                 }
             })
             .join("");
         $(".expenses-list").innerHTML = template;
     }
     render();
-    console.log(today);
+
+    document.querySelector(".upDown").addEventListener("click", function () {
+        document.querySelector(".account-history").classList.toggle("active");
+    });
 }
 App();
